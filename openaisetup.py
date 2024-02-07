@@ -10,6 +10,7 @@
 import os
 from openai import OpenAI
 
+# This is used when the apikey is stored in a file
 f = open('API_KEY.txt','r')
 api_key = f.read()
 
@@ -73,4 +74,4 @@ into a single sentence.
 response = get_completion(prompt)
 print(response)
 
-# ---- I don't have any tokens left LOL ----
+
